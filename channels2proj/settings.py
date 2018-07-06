@@ -31,7 +31,8 @@ ALLOWED_HOSTS = ['*', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'notifier'
+    'channels',
+    'notifier',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -69,6 +70,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'channels2proj.wsgi.application'
+
+ASGI_APPLICATION = 'channels2proj.routing.application'
 
 
 # Database
