@@ -18,6 +18,7 @@ from django.urls import path
 from notifier.views import HomeView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('',HomeView.as_view()),
+    path('admin/', admin.site.urls),
+
 ]

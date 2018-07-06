@@ -8,3 +8,4 @@ application = ProtocolTypeRouter({
         path("ws/", EchoConsumer),
     ])
 })
+
